@@ -7,16 +7,7 @@ import AppAr from "./views/AppAr";
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <AppAr />
-      <AppAr />
-      <AppAr />
-      <AppAr />
-      <AppAr />
-      <AppAr />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
