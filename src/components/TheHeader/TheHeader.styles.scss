@@ -1,0 +1,16 @@
+.nav-menu{
+    display: flex;
+    padding: 0;
+}
+
+.nav-menu-item{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.nav-menu-link{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
