@@ -10,7 +10,14 @@ const users = (state, action) => {
     case 'GET_USER_INFO':
       return {
         ...state,
-        user: action.payload.user,
+        user: action.payload,
+      };
+
+    case 'LOGOUT':
+      return {
+        ...state,
+        user: null,
+        token: null,
       };
 
     default:

@@ -1,9 +1,21 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/UserContext/UserState';
 import { Form, Input, Button } from 'antd';
 
 const Login = () => {
   const { login } = useContext(UserContext);
+
+  const navigate = useNavigate();
+  //esta accion solo se va procesar si hay un usuario logeado, y hay un token
+  useEffect(() => {
+    setTimeout(() => {
+      const foundToken = JSON.parse(localStorage.getItem('token'));
+      if (foundToken) {
+        navigate('/profile');
+      }
+    }, 2000);
+  }, [login]);
 
   const onFinish = (values) => {
     login(values);
@@ -22,7 +34,7 @@ const Login = () => {
         initialValues={{ remember: true }}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
-        autoComplete="off"
+        autoComplete="on"
       >
         <Form.Item
           label="Email"
