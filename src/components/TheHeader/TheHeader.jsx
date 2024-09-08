@@ -43,11 +43,18 @@ const TheHeader = () => {
               </li>
             </>
           ) : (
-            <li className="nav-menu-item">
-              <Link to="/login" className="nav-menu-link">
-                Login
-              </Link>
-            </li>
+            <>
+              <li className="nav-menu-item">
+                <Link to="/login" className="nav-menu-link">
+                  Login
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link to="/register" className="nav-menu-link">
+                  Register
+                </Link>
+              </li>
+            </>
           )}
         </ul>
       </nav>

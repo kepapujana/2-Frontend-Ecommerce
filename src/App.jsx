@@ -8,6 +8,7 @@ import TheHeader from "./components/TheHeader/TheHeader";
 import TheFooter from "./components/TheFooter/TheFooter";
 import { UserProvider } from "./context/UserContext/UserState";
 import { ProductsProvider } from "./context/ProductsContext/ProductsState";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <TheHeader />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/products" element={<Products />} />
