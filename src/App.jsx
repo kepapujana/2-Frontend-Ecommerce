@@ -5,6 +5,7 @@ import Profile from "./components/Profile/Profile";
 import Home from "./components/Home/Home";
 import Products from "./components/Products/Products";
 import TheHeader from "./components/TheHeader/TheHeader";
+import TheFooter from "./components/TheFooter/TheFooter";
 import { UserProvider } from "./context/UserContext/UserState";
 import { ProductsProvider } from "./context/ProductsContext/ProductsState";
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/products" element={<Products />} />
           </Routes>
+          <TheFooter />
         </Router>
       </ProductsProvider>
     </UserProvider>

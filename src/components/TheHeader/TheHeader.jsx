@@ -24,13 +24,13 @@ const TheHeader = () => {
               Home
             </Link>
           </li>
+          <li className="nav-menu-item">
+            <Link to="/products" className="nav-menu-link">
+              Products
+            </Link>
+          </li>
           {token ? (
             <>
-              <li className="nav-menu-item">
-                <Link to="/products" className="nav-menu-link">
-                  Products
-                </Link>
-              </li>
               <li className="nav-menu-item">
                 <Link to="/profile" className="nav-menu-link">
                   Profile
