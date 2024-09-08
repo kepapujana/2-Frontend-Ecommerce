@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import './TheHeader.styles.scss';
-import { useContext } from 'react';
-import { UserContext } from '../../context/UserContext/UserState';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./TheHeader.styles.scss";
+import { useContext } from "react";
+import { UserContext } from "../../context/UserContext/UserState";
 
 const TheHeader = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const TheHeader = () => {
   const logoutUser = () => {
     logout();
     setTimeout(() => {
-      navigate('/');
+      navigate("/");
     }, 2000);
   };
 
@@ -37,11 +37,7 @@ const TheHeader = () => {
                 </Link>
               </li>
               <li className="nav-menu-item">
-                <Link
-                  to="/logout"
-                  onClick={logoutUser}
-                  className="nav-menu-link"
-                >
+                <Link to="/logout" onClick={logoutUser} className="nav-menu-link">
                   Logout
                 </Link>
               </li>
