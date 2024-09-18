@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./TheHeader.styles.scss";
 import { useContext } from "react";
 import { UserContext } from "../../context/UserContext/UserState";
+import { ShoppingCartOutlined } from "@ant-design/icons";
 
 const TheHeader = () => {
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ const TheHeader = () => {
               Products
             </Link>
           </li>
+
           {token ? (
             <>
               <li className="nav-menu-item">
@@ -39,6 +41,11 @@ const TheHeader = () => {
               <li className="nav-menu-item">
                 <Link to="/logout" onClick={logoutUser} className="nav-menu-link">
                   Logout
+                </Link>
+              </li>
+              <li className="nav-menu-item">
+                <Link to="/cart">
+                  <ShoppingCartOutlined />
                 </Link>
               </li>
             </>

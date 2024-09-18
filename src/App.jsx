@@ -9,6 +9,7 @@ import TheFooter from "./components/TheFooter/TheFooter";
 import { UserProvider } from "./context/UserContext/UserState";
 import { ProductsProvider } from "./context/ProductsContext/ProductsState";
 import Register from "./components/Register/Register";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
           <TheFooter />
         </Router>
