@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <>
       <h1>Mi Tienda Online</h1>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
+      <div className="accordion" id="accordionExample">
+        <div className="accordion-item">
+          <h2 className="accordion-header">
             <button
-              class="accordion-button"
+              className="accordion-button"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -21,10 +21,10 @@ const Home = () => {
           </h2>
           <div
             id="collapseOne"
-            class="accordion-collapse collapse show"
+            className="accordion-collapse collapse show"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <strong>This is the first item's accordion body.</strong> It is shown by default,
               until the collapse plugin adds the appropriate classes that we use to style each
               element. These classes control the overall appearance, as well as the showing and
@@ -34,10 +34,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
+        <div className="accordion-item">
+          <h2 className="accordion-header">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseTwo"
@@ -49,10 +49,10 @@ const Home = () => {
           </h2>
           <div
             id="collapseTwo"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <strong>This is the second item's accordion body.</strong> It is hidden by default,
               until the collapse plugin adds the appropriate classes that we use to style each
               element. These classes control the overall appearance, as well as the showing and
@@ -62,10 +62,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
+        <div className="accordion-item">
+          <h2 className="accordion-header">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseThree"
@@ -77,10 +77,10 @@ const Home = () => {
           </h2>
           <div
             id="collapseThree"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <strong>This is the third item's accordion body.</strong> It is hidden by default,
               until the collapse plugin adds the appropriate classes that we use to style each
               element. These classes control the overall appearance, as well as the showing and
@@ -92,35 +92,35 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./public/img/camara.jpg" class="d-block w-100" alt="..." />
+      <div id="carouselExample" className="carousel slide">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="./public/img/camara.jpg" className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src="./public/img/carrito.jpg" class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src="./public/img/carrito.jpg" className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src="./public/img/cosas.jpg" class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src="./public/img/cosas.jpg" className="d-block w-100" alt="..." />
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     </>
