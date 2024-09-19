@@ -30,22 +30,17 @@ const Register = () => {
   return (
     <div>
       <h1>Formulario de Registro</h1>
-
+      <p></p>
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" required />
-
+      <p></p>
       <label for="email">Correo Electrónico:</label>
       <input type="email" id="email" name="email" required />
-
+      <p></p>
       <label for="password">Contraseña:</label>
 
       <input type="password" id="password" name="password" required />
-
-      <label for="role">Rol:</label>
-      <select id="role" name="role">
-        <option value="user">Usuario</option>
-        <option value="admin">Administrador</option>
-      </select>
+      <p></p>
 
       <button type="submit">Registrarse</button>
     </div>
