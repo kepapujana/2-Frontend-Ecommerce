@@ -1,7 +1,7 @@
-import { useContext, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { UserContext } from '../../context/UserContext/UserState';
-import { Form, Input, Button } from 'antd';
+import { useContext, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../../context/UserContext/UserState";
+import { Form, Input, Button } from "antd";
 
 const Login = () => {
   const { login } = useContext(UserContext);
@@ -10,9 +10,9 @@ const Login = () => {
   //esta accion solo se va procesar si hay un usuario logeado, y hay un token
   useEffect(() => {
     setTimeout(() => {
-      const foundToken = JSON.parse(localStorage.getItem('token'));
+      const foundToken = JSON.parse(localStorage.getItem("token"));
       if (foundToken) {
-        navigate('/profile');
+        navigate("/profile");
       }
     }, 2000);
   }, [login]);
@@ -22,7 +22,7 @@ const Login = () => {
   };
 
   const onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
+    console.log("Failed:", errorInfo);
   };
 
   return (
@@ -39,14 +39,14 @@ const Login = () => {
         <Form.Item
           label="Email"
           name="email"
-          rules={[{ required: true, message: 'Please input your email!' }]}
+          rules={[{ required: true, message: "Please input your email!" }]}
         >
           <Input />
         </Form.Item>
         <Form.Item
           label="Password"
           name="password"
-          rules={[{ required: true, message: 'Please input your password!' }]}
+          rules={[{ required: true, message: "Please input your password!" }]}
         >
           <Input.Password />
         </Form.Item>

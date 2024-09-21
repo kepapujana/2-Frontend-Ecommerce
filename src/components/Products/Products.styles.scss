@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  height: 350px;
+  text-align: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+.smallfont {
+  font-size: small;
+}
+h2 {
+  margin-top: 10px;
+}
